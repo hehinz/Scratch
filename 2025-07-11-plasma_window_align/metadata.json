@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Name": "Golden Alignment",
+        "Description": "Align window to left/right and toggle widths between 38%, 50% and 62% (golden ratio)",
+        "Icon": "preferences-system-windows",
+
+        "Authors": [
+            {
+                "Email": "henry.hinz@gmail.com",
+                "Name": "Henry Hinz"
+            }
+        ],
+        "Id": "goldenalign",
+        "Version": "0.1",
+        "License": "GPLv3"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}

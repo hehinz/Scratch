@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<style>
+body {
+    text-align: left;
+    width: 600px;
+}
+code {
+    font-family: monospace;
+}
+
+
+</style>
+</head>
+    <body>
+        <h2>
+            <a href="https://fgiesen.wordpress.com/2010/09/27/data-structures-and-invariants">
+                Data structures and invariants
+            </a>
+            (
+            <a href="https://google.com">via</a>
+            )
+        </h2>
+        <p>
+            This article helped me understand the usefulness of reducing the
+            number of codepaths via the use of sentinel values. Ryan Fleury in
+            [1] introduced me to this concept.
+        </p>
+        <p>Here is the basic to nil-node that can be used as the sentinel.</p>
+        <pre><code>
+typedef struct Node Node;
+
+struct Node {
+    int data;
+    Node *next;
+};
+struct Node nil_node {
+    .data=0,
+    .next=&nil_node;
+};</code></pre>
+        <p>
+            Linked lists are seen as an outdated data structure that happily thrashes the cache, but it has its uses. Not everything need to be put in dictionaries. Linear search is often faster [2].
+        </p>
+        <blockquote>
+            Linked lists are seen as an outdated data structure that happily thrashes the cache, but it has its uses. Not everything need to be put in dictionaries. Linear search is often faster [2].
+        </blockquote>
+        <ol>
+            <li>
+                <a href="https://www.rfleury.com/p/the-codepath-combinatoric-explosion">https://www.rfleury.com/p/the-codepath-combinatoric-explosion</a>
+            </li>
+            <li>
+                https://dunno-the-link.com
+            </li>
+        </table>
+    </body>
+</html>
