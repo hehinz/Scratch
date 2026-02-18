@@ -61,7 +61,7 @@ static bool cmd_line_next(CmdLine *cmd_line)
         }
         next.is_long = true;
         next.beg++;
-        next.opl = strchr(next.beg, '=');
+        next.opl = cstr_find_char(next.beg, '=');
     } else {
         next.is_short = true;
         next.opl = &next.beg[1];
