@@ -66,7 +66,8 @@ static bool cmd_line_next(CmdLine *cmd_line)
         next.is_short = true;
         next.opl = &next.beg[1];
     }
-
+    
+    cmd_line->err = CmdLineErrorUnknown;
     cmd_line->cur = next;
     return true;
 }
