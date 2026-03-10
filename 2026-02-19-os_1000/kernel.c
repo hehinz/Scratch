@@ -4,6 +4,9 @@ typedef unsigned int uz;
 
 extern char __bss[], __bss_end[], __stack_top[];
 
+
+
+
 void *memset(void *buf, u8 c, uz n)
 {
     u8 *p = (u8 *)buf;
