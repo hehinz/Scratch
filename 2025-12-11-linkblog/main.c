@@ -163,7 +163,7 @@ static String parse_link_blog_file(Arena *arena, String source)
 
     for (uz i = 0; i < text_blocks.count; i++) {
         TextBlock *tb = text_blocks.first[i];
-        printf("%.*s\n", (int)tb->text.len, tb->text.str);
+        printf("%.*s\n", str_varg(tb->text));
     }
 
     return result;
