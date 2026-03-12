@@ -1,0 +1,8 @@
+---
+If:                               # Apply this config conditionally
+  PathMatch: [.*\.h, .*\.c]       # to all headers OR c files
+CompileFlags:
+  Add: [-I"$HOME/Developer/base", --std=c23]
+
+---
+
