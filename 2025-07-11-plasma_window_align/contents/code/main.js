@@ -38,13 +38,13 @@ function toggleSideWidth(direction) {
 registerShortcut(
     "toggleSideWidthLeft",
     "Toggle left align widths",
-    "Ctrl+Alt+H",
+    "Shift+Ctrl+Alt+H",
     function() { toggleSideWidth("left"); }
 );
 
 registerShortcut(
     "toggleSideWidthRight",
     "Toggle rigt align widths",
-    "Ctrl+Alt+L",
+    "Shift+Ctrl+Alt+L",
     function() { toggleSideWidth("right"); }
 );
